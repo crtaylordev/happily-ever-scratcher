@@ -5,16 +5,110 @@ html, body {
     margin: 0;
 }
 
+.body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section {
+    width: 100%;
+    padding: 0.5rem 2rem;
+    display: flex;
+}
+
+.logo {
+    width: 3.5rem;
+    height: auto;
+}
+
 /** Colors **/
 
 /* Header */
 
-/* Section */
+.header {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
-/* Section */
+.header-bar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
-/* Section */
+/* About Section */
+
+.about-text,
+.aboutvisual-container {
+    width: 50%;
+}
+
+/* Process Section */
+
+.process-section {
+    flex-direction: column;
+    align-items: center;
+}
+
+.timeline-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Testimonial Section */
+
+.testimonial-section {
+    flex-direction: column;
+    align-items: center;
+}
+
+.quotes-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.client-quote {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.quote-avatar {
+    display: flex;
+    justify-content: center;
+}
+
+.client-name,
+.quote-body {
+    text-align: center;
+}
+
+/* CTA Section */
+
+.cta-text,
+.cta-container {
+    width: 50%;
+}
+
+.cta-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
 /* Footer */
+
+.footer {
+    flex-direction: column;
+}
+
+.footer-footer {
+    display: flex;
+}
 
 /* Media Queries */
