@@ -8,6 +8,7 @@ html, body {
 body {
     background-color: var(--light-neutral);
     font-family: Arial, Helvetica, sans-serif;
+    color: var(--black-ish);
 }
 
 a:hover,
@@ -33,6 +34,7 @@ a:hover {
 .section {
     width: 100%;
     display: flex;
+    padding: 0rem 1rem;
 }
 
 nav {
@@ -53,6 +55,7 @@ nav {
     --medium-neutral: #D8D1BD;
     --dark-pop: #CD4662;
     --light-pop: #E68C3A;
+    --black-ish: #171717;
 }
 
 /* Header */
@@ -74,8 +77,6 @@ nav {
     width: 100%;
     display: flex;
     align-items: center;
-    background-color: var(--dark-pop);
-    color: var(--light-neutral);
 }
 
 .splash-title,
@@ -86,12 +87,15 @@ nav {
 .splash-title h1 {
     font-size: 4.5rem;
     text-align: center;
-    font-family: 'Rock Salt', cursive;
+    font-family: 'Rock Salt', Georgia, 'Times New Roman', Times, serif;
+    color: var(--black-ish);
+    text-shadow: 4px 4px 0 var(--dark-pop);
 }
 
 .splash-image {
-    max-height: 40rem;
+    height: auto;
     margin: 0 auto;
+    border-radius: 52% 48% 85% 15% / 58% 74% 26% 42%; 
 }
 
 /* About Section */
