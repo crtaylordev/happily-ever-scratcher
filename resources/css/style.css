@@ -34,7 +34,12 @@ a:hover {
 .section {
     width: 100%;
     display: flex;
-    padding: 0rem 1rem;
+    padding: 2rem;
+}
+
+.header,
+.footer {
+    padding: 0.5rem 2rem;
 }
 
 nav {
@@ -84,6 +89,12 @@ nav {
     width: 50%;
 }
 
+.title-svg {
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+}
+
 .splash-title h1 {
     font-size: 4.5rem;
     text-align: center;
@@ -93,12 +104,17 @@ nav {
 }
 
 .splash-image {
-    height: auto;
-    margin: 0 auto;
+    width: 70%;
+    margin: 0 auto 1rem auto;
     border-radius: 52% 48% 85% 15% / 58% 74% 26% 42%; 
 }
 
 /* About Section */
+
+.about-section {
+    background-color: var(--dark-pop);
+    color: var(--light-neutral);
+}
 
 .about-text,
 .aboutvisual-container {
