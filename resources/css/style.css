@@ -7,7 +7,7 @@ html, body {
 
 body {
     background-color: var(--light-neutral);
-    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    font-family: 'Noto Sans', Verdana, Tahoma, sans-serif;
     color: var(--black-ish);
 }
 
@@ -38,14 +38,14 @@ a:hover {
 
 .header-bar,
 .footer {
-    padding: 0.5rem 2rem;
+    padding: 0.5rem 3rem;
 }
 
 .about-text,
 .process-section,
 .testimonial-section,
 .cta-section {
-    padding: 2rem;
+    padding: 3rem;
 }
 
 nav {
@@ -66,7 +66,7 @@ nav {
     --medium-neutral: #D8D1BD;
     --dark-pop: #CD4662;
     --light-pop: #E68C3A;
-    --black-ish: #171717;
+    --black-ish: #272727;
 }
 
 /* Header */
@@ -105,58 +105,66 @@ nav {
     width: 50%;
     height: auto;
 }
-/*
-.splash-title h1 {
-    font-size: 4.5rem;
-    text-align: center;
-    font-family: 'Rock Salt', Georgia, 'Times New Roman', Times, serif;
-    color: var(--black-ish);
-    text-shadow: 4px 4px 0 var(--dark-pop);
-}*/
 
 .splash-image {
     width: 70%;
     border-radius: 52% 48% 85% 15% / 58% 74% 26% 42%; 
 }
 
-
-
 /* About Section */
 
 .about-section {
+    align-items: center;
+    margin-top: 1rem;
     background-image: url(../images/blob-01-desktop.png);
     background-size: contain;
     background-repeat: no-repeat;
+    height: 20rem;
 }
 
-.about-text,
-.aboutvisual-container {
-    min-height: 20rem;
-    width: 50%;
-}
-
-.about-image {
-    display: none;
-    width: 60%;
-    margin: 0 auto;
-}
-
-/* Process Section */
-
-.process-section {
-    flex-direction: column;
-    align-items: center;
-}
-
-.timeline-container {
+.about-content {
     display: flex;
-    justify-content: space-around;
-    padding-top: 1rem;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 60%;
+    min-height: fit-content;
+    background-color: var(--medium-neutral);
+    padding: 2rem;
+    box-shadow: 6px 6px 0px var(--dark-pop);
+    font-size: 1.10rem;
 }
 
-.timeline-image {
-    margin: 0 auto;
-    width: 10%;
+.about-content h2 {
+    color: var(--dark-pop);
+}
+
+.about-content p,
+.about-button {
+    margin-top: 1rem;
+}
+
+.about-button {
+    margin: 1rem auto 0 auto;
+    width: 60%;
+    padding: 1rem 2rem;
+    background-color: var(--black-ish);
+    color: var(--light-neutral);
+    font-weight: 700;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 3px 3px 0 var(--dark-pop);
+}
+
+.about-button:active {
+    background-color: var(--dark-pop);
+    box-shadow: 3px 3px 0 var(--black-ish);
+    transform: translateX(3px) translateY(3px);
+}
+
+.about-button:hover {
+    background-color: var(--dark-pop);
+    box-shadow: 3px 3px 0 var(--black-ish);
 }
 
 /* Testimonial Section */
@@ -167,6 +175,7 @@ nav {
     background-image: url(../images/blob-02-desktop.png);
     background-repeat: no-repeat;
     background-position: right;   background-size: contain;
+    height: 20rem;
     margin-bottom: 2rem;
 }
 
@@ -177,14 +186,18 @@ nav {
 
 .quotes-container {
     display: flex;
-    justify-content: space-around;
-    max-width: 80%;
+    justify-content: center;
+    width: fit-content;
 }
 
 .client-quote {
-    width: 15%;
+    width: 22%;
+    margin: 1rem;
+    padding: 1rem;
     display: flex;
     flex-direction: column;
+    background-color: var(--medium-neutral);
+    box-shadow: 6px 6px 0px var(--dark-pop);
 }
 
 .quote-avatar {
@@ -206,6 +219,24 @@ nav {
 .client-name,
 .quote-body {
     text-align: center;
+}
+
+/* Process Section */
+
+.process-section {
+    flex-direction: column;
+    align-items: center;
+}
+
+.timeline-container {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1rem;
+}
+
+.timeline-image {
+    margin: 0 auto;
+    width: 10%;
 }
 
 /* CTA Section */
