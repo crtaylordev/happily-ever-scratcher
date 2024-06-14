@@ -16,9 +16,9 @@
         <div class="header-bar">
             <img class="logo header-logo" src="./resources/images/cat-logo.png" alt="Happily Ever Scratcher logo">
             <nav class="headerbar-nav">
-                <a class="headerbar-link">About</a>
-                <a class="headerbar-link">Reviews</a>
-                <a class="headerbar-link">Contact</a>
+                <a class="headerbar-link" href="#about">About</a>
+                <a class="headerbar-link" href="#reviews">Reviews</a>
+                <a class="headerbar-link" href="#contact">Contact</a>
             </nav>
         </div>
         <div class="header-splash">
@@ -31,7 +31,7 @@
         </div>
     </header>
     <main>
-        <section class="section about-section">
+        <section class="section about-section" id="about">
             <div class="about-content">
                 <h2>Matchmaking for the Modern Cat</h2>
                 <p>In today's world of online shopping, eligible cats can find themselves lost in what feels like an endless scroll of options for corrugated companionship. Our cardboard box matchmaking service takes a different approach, developing a holistic profile of each client to determine what type of container will provide the stable, fulfilling relationship they desire.</p>
@@ -42,24 +42,29 @@
             <h2>Our process</h2>
             <div class="timeline-container">
                 <div class="timeline-block">
-                    <img class="timeline-image" id="timeline-image01" src="./resources/images/square-placeholder-copperteal.jpg">
-                    <p class="timeline-text">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                    <h3 class="timeline-number">1</h3>
+                    <img class="timeline-image" src="./resources/images/step-interview-unsplash-kanashi.png">
+                    <p class="timeline-text">One-on-one virtual consultation</p>
                 </div>
                 <div class="timeline-block">
-                    <img class="timeline-image" id="timeline-image01" src="./resources/images/square-placeholder-copperteal.jpg">
-                    <p class="timeline-text">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                    <h3 class="timeline-number">2</h3>
+                    <img class="timeline-image" src="./resources/images/step-choose-kampus-production.png">
+                    <p class="timeline-text">Expert cardboard box selection</p>
                 </div>
                 <div class="timeline-block">
-                    <img class="timeline-image" id="timeline-image01" src="./resources/images/square-placeholder-copperteal.jpg">
-                    <p class="timeline-text">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                    <h3 class="timeline-number">3</h3>
+                    <img class="timeline-image" src="./resources/images/step-intro-box-mart-production.png">
+                    <p class="timeline-text">Professionally-facilitated introduction</p>
                 </div>
                 <div class="timeline-block">
-                    <img class="timeline-image" id="timeline-image01" src="./resources/images/square-placeholder-copperteal.jpg">
-                    <p class="timeline-text">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                    <h3 class="timeline-number">4</h3>
+                    <img class="timeline-image"
+                    src="./resources/images/step-happybox-arina-krasnikova.jpg">
+                    <p class="timeline-text">Guaranteed satisfaction!<a href="#footer-disclaimer">*</a></p>
                 </div>
             </div>
         </section>
-        <section class="section testimonial-section">
+        <section class="section testimonial-section" id="reviews">
             <h2>What our clients say</h2>
             <div class="quotes-container">
                 <div class="client-quote">
@@ -85,10 +90,11 @@
                 </div>
             </div>
         </section>
-        <section class="section cta-section">
+        <section class="section cta-section" id="contact">
             <div class="cta-text">
                 <h3>Let's talk!</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <br>
+                <p>Book a free consultation today and start your cat's journey to a truly lasting<a href="#footer-disclaimer">*</a> relationship.</p>
             </div>
             <div class="cta-container">
                 <button class="cta-button">Contact Us</button>
@@ -98,13 +104,16 @@
     <footer class="section footer">
         <img class="logo footer-logo" src="./resources/images/cat-logo.png" alt="Happily Ever Scratcher logo">
         <nav class="footer-nav">
-          <a class="footernav-link">About</a>
-          <a class="footernav-link">Reviews</a>
-          <a class="footernav-link">Contact</a>
+          <a class="footernav-link" href="#about">About</a>
+          <a class="footernav-link" href="#reviews">Reviews</a>
+          <a class="footernav-link" href="#contact">Contact</a>
         </nav>
+        <div id="footer-disclaimer">
+            <p>* Happily Ever Scratcher does not guarantee the durability of any individual cardboard box provided by our service. The words "ever," "lasting," and synonyms to such refer only to your cat's happiness with their cardboard box regardless of whether destroying and/or eating said cardboard box is essential to your cat's satisfaction with our services.</p>
+        </div>
         <div class="footer-footer">
-            <p class="copyright">Designed and built by <a href="https://github.com/crtaylordev/" target="_blank">C.R. Taylor</a></p>
-            <p class="attribution">Cat icons by <a href="https://www.flaticon.com/free-icons/paw" target="_blank">Mihimihi at Flaticon</a></p>
+            <p class="copyright">Designed and built by <a href="https://github.com/crtaylordev/" target="_blank">C.R. Taylor</a>.</p>
+            <p class="attribution">Cat icons by <a href="https://www.flaticon.com/free-icons/paw" target="_blank">Mihimihi at Flaticon.</a></p>
         </div>
     </footer>
     <!--<script src="./script/script-nav.js"></script>-->
