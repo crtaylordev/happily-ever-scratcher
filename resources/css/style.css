@@ -253,22 +253,26 @@ nav {
 
 .cta-section {
     background-color: var(--light-pop);
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
 .cta-text,
 .cta-container {
-    width: 50%;
+    min-width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 
 .cta-button {
     background-color: var(--black-ish);
     color: var(--light-neutral);
-    width: 30%;
-    padding: 1rem 2rem;
+    margin: 1rem;
+    padding: 1rem 3rem;
     font-weight: 700;
     border: none;
     border-radius: 10px;
@@ -302,10 +306,12 @@ nav {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
     opacity: 75%;
 }
 
 .attribution {
+    text-align: center;
     margin: 0.5rem;
 }
 
