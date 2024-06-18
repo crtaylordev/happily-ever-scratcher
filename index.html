@@ -15,8 +15,28 @@
     <header class="section header">
         <div class="header-bar" id="home">
             <img class="logo header-logo" src="./resources/images/cat-logo.png" alt="Happily Ever Scratcher logo">
-            <nav class="headerbar-nav">
-                <a class="headerbar-link" href="#process">How It Works</a>
+            <input aria-hidden="true" type="checkbox" id="menu-state" />
+            <nav class="burger-nav mobile-nav">
+                <div class="hamburger-button light-txtcolor">
+                    <a class="open" role="button" href="#menu-state">
+                        <span class="screen-reader-text">Open Menu</span>
+                    </a>
+                    <a class="close" role="button" href="#">
+                        <span class="screen-reader-text">Close Menu</span>
+                    </a>
+                    <label for="menu-state" aria-hidden="true">
+                        <span class="open">&#9776;</span>
+                        <span class="close">&#10006;</span>
+                    </label>
+                </div>
+                <ul class="nav-menu">
+                    <li><a class="nav-link" href="#process">How it Works</a></li>
+                    <li><a class="nav-link" href="#reviews">Reviews</a></li>
+                    <li><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </nav>      
+            <nav class="headerbar-nav desktop-nav">
+                <a class="headerbar-link" href="#process">How it Works</a>
                 <a class="headerbar-link" href="#reviews">Reviews</a>
                 <a class="headerbar-link" href="#contact">Contact</a>
             </nav>

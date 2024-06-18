@@ -23,7 +23,7 @@ a {
 }
 
 a:hover {
-    text-decoration-line: underline;
+    color: var(--dark-pop);
 }
 
 .headerbar-link,
@@ -48,7 +48,8 @@ a:hover {
     padding: 3rem;
 }
 
-nav {
+.headerbar-nav,
+.footer-nav {
     width: 20rem;
     display: flex;
     justify-content: space-between;
@@ -110,6 +111,120 @@ nav {
     width: 70%;
     border-radius: 52% 48% 85% 15% / 58% 74% 26% 42%; 
 }
+
+/**MOBILE NAV**/
+
+.burger-nav {
+    display: none;
+}
+
+#menu-state {
+    display: none;
+}
+
+.hamburger-button {
+    position: relative;
+    width: 2rem;
+    height: 2rem;
+}
+
+.hamburger-button :is(label, a) {
+    position: absolute;
+    inset: 0;
+}
+
+.open {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.close {
+    display: none;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 3rem;
+}
+
+.nav-menu,
+.burger-nav .close {
+    display: none;
+}
+
+:is(#menu-state:checked, #menu-state:target) ~ nav :is(ul, .close) {
+    display: block;
+}
+
+:is(#menu-state:checked, #menu-state:target) ~ nav .open {
+    display: none;
+}
+
+.screen-reader-text {
+    clip-path: rect(1px 1px 1px 1px);
+    position: absolute !important;
+    border: 0;
+    padding: 0;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.nav-menu {
+    text-align: center;
+    height: fit-content;
+    position: absolute;
+    left: 0;
+    right: 0;
+    padding: 2rem;
+    list-style: none;
+    background-color: var(--light-neutral);
+    animation: fadeIn 0.3s;
+    -webkit-animation: fadeIn 0.3s;
+    -moz-animation: fadeIn 0.3s;
+    -o-animation: fadeIn 0.3s;
+    -ms-animation: fadeIn 0.3s;
+}
+
+    @keyframes fadeIn {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+    }
+  
+    @-moz-keyframes fadeIn {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+    }
+  
+    @-webkit-keyframes fadeIn {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+    }
+  
+    @-o-keyframes fadeIn {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+    }
+  
+    @-ms-keyframes fadeIn {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+    }
+
+.nav-link {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 2.5rem;
+    color: var(--verydark-desat-blue);
+}
+
+.nav-link:active {
+    color: var(--light-mod-cyan);
+}
+
 
 /* About Section */
 
@@ -392,8 +507,12 @@ nav {
 }
 
 @media screen and (max-width: 520px) {
-    .header-bar {
-        flex-direction: column;
+    .desktop-nav {
+        display: none;
+    }
+
+    .burger-nav {
+        display: block;
     }
 }
 
