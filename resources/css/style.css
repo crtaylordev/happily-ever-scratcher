@@ -192,8 +192,8 @@ nav {
 
 .client-quote {
     max-width: 22rem;
-    margin: 1rem;
-    padding: 1rem;
+    margin: 1.5rem;
+    padding: 1.25rem;
     display: flex;
     flex-direction: column;
     background-color: var(--medium-neutral);
